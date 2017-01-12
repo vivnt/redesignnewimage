@@ -5,160 +5,159 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Sacramento" rel="stylesheet">
+<script type="text/javascript" src="instafeed.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Oswald|Lato|Sacramento" rel="stylesheet">
 
 <style>
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;}
+}
+
 body {
       position: relative;
-	  font-family: 'Raleway', sans-serif;
-  }
+	  font-family: 'Lato', sans-serif;}
   
+.navbar { font-size: 1.2em;}
+	
 .navbar-fixed-top {
-	background-color: transparent;
-}
+	background-color: #f8f8f8;
+	opacity: .75;}
 
 .navbar-default .navbar-brand {
-	color: #FFFFFF;
-}
+	color: #777;}
 
 .nav.navbar-nav.navbar-right li a {
-	color: #FFFFFF;
-}
+	color: #777;}
 
-.navbar-header a, .header {
-	font-family: 'Oswald', sans-serif;
-}
+.navbar-header a, .header, .nav.navbar-nav.navbar-right  {
+	font-family: 'Oswald', sans-serif;}
 
 .nav .navbar-nav .navbar-right li a {
-	color: white;
-}
+	color: #777;}
 
-.navbar-nav {
-	font-size: 15px;
-}
+ul li a:hover, .in ul li a:hover {
+	color: #000000 !important;}
 
-.parallaximg, .parallaximg-2, .parallaximg-3, .parallaximg-4{
+.parallaximg {
 	position: relative;
-	opacity: .8;
+	opacity: .9;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: cover;
-
-}
+	background-size: cover;}
 	
+.landingimg {
+    /* The image used */
+    background-image: url("Salon2.jpeg");
+
+    /* Set a specific height */
+    min-height: 650px; 
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;}
+
+.salonimg {
+    /* The image used */
+    background-image: url("WSalon2_compressed.jpg");
+    /* Set a specific height */
+    min-height: 800px; 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;}
+
 .parallaximg {
     /* The image used */
     background-image: url("WSalon_compressed.jpg");
-
     /* Set a specific height */
     min-height: 600px; 
-	
-	background-position: center;
-}
+	background-position: center;}
 
-.parallaximg-2 {
-    /* The image used */
-    background-image: url("WSalon1_compressed.jpg");
-
-    /* Set a specific height */
-    min-height: 600px; 
-	
-	background-position: left;
-}
-
-.parallaximg-3 {
-    /* The image used */
-    background-image: url("WSalon2_compressed.jpg");
-
-    /* Set a specific height */
-    min-height: 600px; 
-	
-	background-position: center;
-}
-
-.parallaximg-4 {
+.contactimg {
     /* The image used */
     background-image: url("WSalon3_compressed.jpg");
-
     /* Set a specific height */
-    min-height: 600px; 
-	
-	background-position: center;
-}
-
+    min-height: 600px;
+	background-size: cover;
+	background-repeat: no-repeat; 
+	background-position: center;}
 
 .caption {
 	font-family: 'Sacramento', cursive;
 	color: #fff;
-	font-size: 100px;
-	
+	font-size: 125px;
+
 	position: absolute;
 	left: 0;
 	top: 40%;
 	width: 100%;
-	text-align: center;
-}
+	text-align: center;}
+
+.title {
+	 text-align:center; 
+	 font-size: 2em;}
 
 .aboutus {
-	height: 300px;
 	background-color:white;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align:justify center;
 	font-size: 18px;
-	line-height: 2em;
-}
+	line-height: 2em;}
 
 .services {
-	height: 900px;
 	background-color:white;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align:justify center;
 	font-size: 18px;
-	line-height: 2em;
-}
+	line-height: 2em;}
 
 .contact {
-	height: 500px;
 	background-color:white;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align:justify center;
 	font-size: 18px;
-	line-height: 2em;
-}
+	line-height: 2em;}
 
-.price {float:right;}
+.price {
+	float:right;}
+	
+#instafeed a {
+  margin:3px;
+  display:inline-block;
+  position:relative;
+}
 
 </style>
 </head>
 <body>
-
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="background:none;">
+<div class="container-fluid" id="page-top">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav"><span class="sr-only">Toggle navigation</span><span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span></button>
                 <a class="navbar-brand page-scroll" href="#page-top">NEW IMAGE SALON AND SPA</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="nav">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">ABOUT</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">SERVICES</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">PORTFOLIO</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -167,148 +166,212 @@ body {
         <!-- /.container-fluid -->
     </nav>
 
-<div class="parallaximg">
+<div class="landingimg">
     <span class="caption">Welcome</span>
 </div>
 
 <div class="container aboutus" id="about">
-<h3 style="text-align:center; font-size: 1.5em;">&mdash; About Us &mdash;</h3>
+<h3 class="title">Who We Are</h3><hr>
 <p>Located in Fremont, New Image Salon & Spa is one of the most stylish and prestigious hair salons in the East Bay. Some services we offer are coloring, hair highlights, keratin treatments, and permanent straightening treatments. We also offer skin care services includes top of the line facial treatments. Call us to schedule an appointment. </p>
 </div>
 
-<div class="parallaximg-2"></div>
+<div class="salonimg"></div>
 
 <div class="container services" id="services">
-<h3 style="text-align:center; font-size: 1.5em;">&mdash; Services &mdash;</h3>
+<h3 class="title">Services</h3><hr>
 <div class="row">
-	<div class="col-sm-12">
-        <div class="row">
         	<div class="col-sm-6">
-            <h2 class="text-center header">LADIES</h2>
-                	<dl class="womens-hair">
-                   			<dt class="price">50</dt>
-                		<dt>Haircut</dt>
-                        	<dt class="price">65</dt>
-                    	<dt>Color Touchup</dt>
-                        	<dt class="price">90+</dt>
-                    	<dt>One Processing Color</dt>
-                        	<dt class="price">100+</dt>
-                    	<dt>Highlights/Lowlights</dt>
-                            <dt class="price">35</dt>
-                        <dt>Shampoo Blowdry</dt>
-                            <dt class="price">50+</dt>
-                        <dt>Event/Updo Style</dt>
-                             <dt class="price">40+</dt>
-                    	<dt>Makeup</dt>
-                        	<dt class="price">35+</dt>
-                        <dt>Oil Treatment</dt>
-                        	<dt class="price">45-65</dt>
-                    	<dt>Deep Conditioning Treatment</dt>
-                        	<dt class="price">250+</dt>
-                        <dt>Keratin Treatment</dt>
-                        	<dt class="price">300+</dt>
-                        <dt>Permanent Straighting Treatment</dt>
-                 	</dl>
+          	<h2 class="text-center header">LADIES</h2>
+          	<table class ="table table-responsive">
+				<tbody>
+					<tr>
+						<th>Haircut</th>
+						<th>50</th>
+					</tr>
+					<tr>
+						<th>Color Touchup</th>
+						<th>65</th>
+					</tr>
+					<tr>
+						<th>One Processing Color</th>
+						<th>90+</th>
+					</tr>
+					<tr>
+						<th>Highlights/Lowlights</th>
+						<th>100+</th>
+					</tr>
+					<tr>
+						<th>Shampoo & Blowdry</th>
+						<th>35</th>
+					</tr>
+					<tr>
+						<th>Event/Updo Style</th>
+						<th>50+</th>
+					</tr>
+					<tr>
+						<th>Makeup</th>
+						<th>40+</th>
+					</tr>
+					<tr>
+						<th>Oil Treatment</th>
+						<th>35+</th>
+					</tr>
+					<tr>
+						<th>Deep Conditioning Treatment</th>
+						<th>45-65</th>
+					</tr>
+					<tr>
+						<th>Keratin Treatment</th>
+						<th>250+</th>
+					</tr>
+					<tr>
+						<th>Permanent Straighting Treatment</th>
+						<th>300+</th>
+					</tr>
+					<tr>
+						<th>Perm</th>
+						<th>100</th>
+					<tr>
+						<th>Extensions</th>
+						<th>Consult</th>
+					</tr>
+				</tbody>
+           </table>
                 </div>
             	<div class="col-sm-6">
-          <h2 class="text-center header">WAXING & THREADING</h2>
-                <div class="col-sm-12">
-                	 	<dt class="price">40</dt>
-                    <dt>Full Face</dt>
-                		<dt class="price">15</dt>
-               		<dt>Eyebrow</dt>
-                    	<dt class="price">8</dt>
-                    <dt>Lip</dt>
-                    	<dt class="price">10+</dt>
-                    <dt>Chin</dt>
-                    	<dt class="price">35+</dt>
-                    <dt>Full Arm</dt>
-                        <dt class="price">50+</dt>
-                    <dt>Full Leg</dt>
-                    	<dt class="price">30+</dt>
-                    <dt>Bikini Line</dt>
-                    	<dt class="price">50+</dt>
-                    <dt>Brazilian Bikini</dt>
-                </div>
+          <h2 class="text-center header">WAXING</h2>
+		   <table class ="table table-responsive">
+			<tbody>
+				<tr>
+					<th>Full Face</th>
+					<th>35</th>
+				</tr>
+				<tr>
+					<th>Eyebrow</th>
+					<th>15</th>
+				</tr>
+				<tr>
+					<th>Lip</th>
+					<th>8</th>
+				</tr>
+				<tr>
+					<th>Chin</th>
+					<th>10</th>
+				</tr>
+				<tr>
+					<th>Full Arm</th>
+					<th>35+</th>
+				</tr>
+				<tr>
+					<th>Full Leg</th>
+					<th>50+</th>
+				</tr>
+				<tr>
+					<th>Under Arm</th>
+					<th>15</th>
+				</tr>
+			</tbody>
+           </table>
           </div>
         </div>
-        </div>   
-		</div>
         <div class="row">
-		<div class="col-sm-6">
-            	<h2 class="text-center header">CHILDREN</h2>
-                	<div class="col-sm-12">
-                    	<dt class="price">20+</dt>
-                    	<dt>Haircut</dt>
-                    </div>
-            </div>
 			<div class="col-sm-6">
-            	<h2 class="text-center header">GENTLEMEN</h2>
-                <div class="col-sm-12">
-                	<dt class="price">30</dt>
-                	<dt>Haircut</dt>
-                    	<dt class="price">50</dt>
-                    <dt>Color</dt>
-                    	<dt class="price">25</dt>
-                    <dt>Oil/Scalp Treatment</dt>
-                </div>
-            </div>
-          </div>
+					<h2 class="text-center header">CHILDREN</h2>
+					<table class ="table table-responsive">
+					<tbody>
+						<tr>
+							<th>Girl's Haircut</th>
+							<th>20+</th>
+						</tr>
+						<tr>
+							<th>Boy's Haircut</th>
+							<th>15+</th>
+						</tr>
+						<tr>
+					</tbody>
+					</table>
+			</div>
+				<div class="col-sm-6">
+					<h2 class="text-center header">GENTLEMEN</h2>
+				   <table class ="table table-responsive">
+					<tbody>
+						<tr>
+							<th>Haircut</th>
+							<th>40</th>
+						</tr>
+						<tr>
+							<th>Color</th>
+							<th>50</th>
+						</tr>
+						<tr>
+							<th>Oil/Scalp Treatment</th>
+							<th>25</th>
+						</tr>
+					</tbody>
+				   </table>
+				</div>
+			  </div>
 		  <div class="row">
-		  <div class="col-sm-12">
-            	<h2 class="text-center header">SPA SERVICES</h2>
-                <div class="col-sm-12 spaservices">
-                		<dt class="price">150</dt>
-               		<dt>Vita Cura 5 Phase Firming Facial</dt>
-                    	<dt class="price">105</dt>
-                    <dt>Four Layer</dt>
-                    	<dt class="price">95</dt>
-                    <dt>Lymphatic Cleansing Facial</dt>
-                    	<dt class="price">85</dt>
-                    <dt>Acne Pore Perfecting Facial</dt>
-                    	<dt class="price">85</dt>
-                    <dt>Back Treatment</dt>
-                    	<dt class="price">75</dt>
-                    <dt>European Facial</dt>
-                    	<dt class="price">75</dt>
-                    <dt>Hydra 4 Facial</dt>
-                </div>
-     </div>
+			  <div class="col-sm-12">
+					<h2 class="text-center header">SPA SERVICES</h2>
+				   <table class ="table table-responsive">
+						<tbody>
+							<tr>
+								<th>Vita Cura 5 Phase Firming Facial</th>
+								<th>150</th>
+							</tr>
+							<tr>
+								<th>Four Layer</th>
+								<th>105</th>
+							</tr>
+							<tr>
+								<th>Lymphatic Cleansing Facial</th>
+								<th>95</th>
+							</tr>
+							<tr>
+								<th>Acne Pore Perfecting Facial</th>
+								<th>85</th>
+							</tr>
+							<tr>
+								<th>Back Treatment</th>
+								<th>85</th>
+							</tr>
+							<tr>
+								<th>European Facial</th>
+								<th>75</th>
+							</tr>
+							<tr>
+								<th>Hydra 4 Facial</th>
+								<th>75</th>
+							</tr>
+						</tbody>
+			 	  </table>       
+		 	</div>
   </div>
 </div>
-</div>
 
-<div class="parallaximg-3"></div>
+
+<div class="parallaximg"></div>
 
 <div class="container aboutus" id="portfolio">
-<h3 style="text-align:center; font-size: 1.5em;">&mdash; Portfolio &mdash;</h3>
-<p>Located in Fremont, New Image Salon & Spa is one of the most stylish and prestigious hair salons in the East Bay. Some services we offer are coloring, hair highlights, keratin treatments, and permanent straightening treatments. We also offer skin care services includes top of the line facial treatments. Call us to schedule an appointment. </p>
+<h3 class="title">Portfolio</h3><hr>
+	<div align="center" id="insta-wrap">
+		<div  id="instafeed"></div>
+		<button id="load-more" type="button" class="btn btn-outline-secondary">Load More</button>
+	</div>
 </div>
 
-<div class="parallaximg-4"></div>
+<div class="contactimg"></div>
 
 <div class="container contact" id="contact">
+<h3 class="title">Contact</h3><hr>
 		<iframe width="100%" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0W_z4Kl-v4q2XFknvM_P61oO5ZK3cXNE
     &q=New+Image+Salon+Spa,Fremont+CA" allowfullscreen></iframe>
 </div>
 
+</div>
+
 <script>
-	<!-- Transparent/White Fixed NavBar on Scroll -->
-    $(document).ready(function(){
-      $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) { //If scrolled down
-          $(".navbar-fixed-top").css("background-color", "#f8f8f8");
-		  $(".navbar-default .navbar-brand").css("color", "#777");
-		  $(".nav.navbar-nav.navbar-right li a").css("color", "#777");
-        } else { //If at the top
-          $(".navbar-fixed-top").css("background-color", "transparent");
-		  $(".navbar-default .navbar-brand").css("color", "#FFFFFF");
-		  $(".nav.navbar-nav.navbar-right li a").css("color", "#FFFFFF");
-        }
-      });
-    });
-	
-	
 	<!-- Smooth Scroll -->
 	$('body').scrollspy({target: ".navbar", offset: 50});
 
@@ -337,6 +400,34 @@ body {
   } // End if
 
 });
+</script>
+
+<script type="text/javascript">
+    var loadButton = document.getElementById('load-more');
+	var isStandardWindow = window.matchMedia("(min-width: 640px)").matches;
+    var feed = new Instafeed({
+        limit: isStandardWindow ? 6 : 3,
+        get: 'user',
+        userId: '3159402963',
+        clientId: '865cbd4b6ddf444aac5e347c6e3bce8b',
+		accessToken: '3159402963.1677ed0.069d3a0eaf674023ae8d32233bb69e52',
+		resolution: 'standard_resolution',
+	   	template: isStandardWindow ? '<a href="{{link}}" target="_blank"><img src="{{image}}" width="200" height="200"></a>' : '<a href="{{link}}" target="_blank"><img src="{{image}}" width="200" height="200"></a>',
+        after: function() {
+            // disable button if no more results to load
+            if (!this.hasNext()) {
+                loadButton.setAttribute('disabled', 'disabled');
+            }
+        },
+    });
+
+    // bind the load more button
+    loadButton.addEventListener('click', function() {
+        feed.next();
+    });
+
+    // run our feed!
+    feed.run();
 </script>
 </body>
 </html>
