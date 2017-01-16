@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+<head>
 
 <!-- Latest compiled and minified CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -8,424 +9,406 @@
 <script type="text/javascript" src="instafeed.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Oswald|Lato|Sacramento" rel="stylesheet">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-
 <style>
-@media only screen and (max-device-width: 1024px) {
-    .parallax {
-        background-attachment: scroll;}
 }
-
 body {
-      position: relative;
-	  font-family: 'Lato', sans-serif;}
-  
-.navbar { 
-	font-size: 1.2em;}
-	
+	position: relative;
+	font-family: 'Lato', sans-serif;
+}
+.navbar {
+	font-size: 1.2em;
+}
 .navbar-fixed-top {
 	background-color: #f8f8f8;
-	opacity: .75;}
-
+	opacity: .75;
+}
 .navbar-default .navbar-brand {
 	color: #777;
-	padding-left: 25px;}
-
+	padding-left: 25px;
+}
 .nav.navbar-nav.navbar-right li a {
-	color: #777;}
-
-.navbar-header a, .header, .nav.navbar-nav.navbar-right  {
-	font-family: 'Oswald', sans-serif;}
-
+	color: #777;
+}
+.navbar-header a, .header, .nav.navbar-nav.navbar-right {
+	font-family: 'Oswald', sans-serif;
+}
 .nav .navbar-nav .navbar-right li a {
-	color: #777;}
-
+	color: #777;
+}
 ul li a:hover, .in ul li a:hover {
-	color: #000000 !important;}
-
+	color: #000000 !important;
+}
 .parallaximg {
 	position: relative;
 	opacity: .9;
-	
+	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: cover;}
-	
+	background-size: cover;
+}
 .landingimg {
-    /* The image used */
-    background-image: url("landing.jpeg");
-
-    /* Set a specific height */
-    min-height: 650px; 
+	background-image: url("landing.jpeg");
+	min-height: 650px;
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	position: relative;}
-
+	position: relative;
+}
 .salonimg {
-    /* The image used */
-    background-image: url("salon.jpg");
-    /* Set a specific height */
-    min-height: 800px; 
+	background-image: url("salon.jpg");
+	min-height: 800px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: left;}
-
+	background-position: left;
+}
 .parallaximg {
-    /* The image used */
-    background-image: url("parallax.jpg");
-    /* Set a specific height */
-    min-height: 600px; 
-	background-position: center;}
-
+	background-image: url("parallax.jpg");
+	min-height: 600px;
+	background-position: center;
+}
 .contactimg {
-    /* The image used */
-    background-image: url("contact.jpg");
-    /* Set a specific height */
-    min-height: 600px;
+	background-image: url("contact.jpg");
+	min-height: 600px;
 	background-size: cover;
-	background-repeat: no-repeat; 
-	background-position: center;}
-
+	background-repeat: no-repeat;
+	background-position: center;
+}
 .caption {
 	font-family: 'Sacramento', cursive;
 	color: #fff;
 	font-size: 125px;
-
 	position: absolute;
 	left: 0;
 	top: 40%;
 	width: 100%;
-	text-align: center;}
-
+	text-align: center;
+}
 .title {
-	 text-align:center; 
-	 font-size: 2em;}
-	 
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	font-size: 2em;
+}
 .stylists {
 	padding: 20px 20px;
 }
-
 .aboutus {
-	background-color:white;
+	font-family: 'Lato', sans-serif;
+	background-color: white;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	text-align:justify center;
+	text-align: justify center;
 	font-size: 18px;
-	line-height: 2em;}
-	
+	line-height: 2em;
+}
 .aboutus .stylists {
-	align-content:center;
+	align-content: center;
+}
+.services {
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 18px;
+	line-height: 2em;
+}
+.services table {
+		font-family: 'Lato', sans-serif;
+		width: 100%;
+	}
+	.services .price {
+		text-align: right;
+	}
+.portfolio {
+		padding: 25px 0;
+	}
+.contact {
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: justify center;
+	font-size: 18px;
+	line-height: 2em;
+}
+.price {
+	align-text: right;
 }
 
-.services {
-	background-color:white;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	text-align:justify center;
-	font-size: 18px;
-	line-height: 2em;}
-
-.contact {
-	background-color:white;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	text-align:justify center;
-	font-size: 18px;
-	line-height: 2em;}
-
-.price {
-	float:right;}
-	
 #instafeed a {
-  margin:3px;
+margin:10px;
   display:inline-block;
   position:relative;
 }
 
-.iconblack {color:black;}
-
+.iconblack {
+	color: black;
+}
 .icons li a {
-	font-size:3rem;
-	padding: 15px;}
+	font-size: 3rem;
+	padding: 15px;
+}
+.footer {
+	background: black;
+	color: #777;
+	text-align: center;
+	font-family: 'Oswald', san-serif;
+	padding: 25px 0;
+}
 </style>
 </head>
 <body>
-<div class="container" id="page-top">
+<div id="page-top">
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav"><span class="sr-only">Toggle navigation</span><span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span></button>
-                <a class="navbar-brand page-scroll" href="#page-top">NEW IMAGE SALON AND SPA</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="nav">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">ABOUT</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">SERVICES</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">PORTFOLIO</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" style="padding-right: 25px;" href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-<div class="landingimg">
-    <span class="caption">Welcome</span>
-</div>
-
-<div class="container aboutus" id="about">
-<h3 class="title">Who We Are</h3><hr>
-	<div class="row">
-		<p>Located in Fremont, New Image Salon & Spa is one of the most stylish and prestigious hair salons in the East Bay. Some services we offer are coloring, hair highlights, keratin treatments, and permanent straightening treatments. We also offer skin care services includes top of the line facial treatments. Call us to schedule an appointment. </p>
-	</div>
-	<div class="row">
-	<h3 class="title">The Stylists</h3><hr>
-	<div class="col-sm-6 stylists">
-		<div class="text-center">
-                <img class="img-circle" align="center" src="tracey.jpg" width="250" alt="">
-                <h3>Tracey
-                    <small>Stylist</small>
-                </h3>
-                <p>Specialty in blonding and color</p>
-            </div>
-		</div>
-	<div class="col-sm-6 stylists">
-		<div class="text-center">
-                <img class="img-circle" align="center" src="desi.jpg" width="250" alt="">
-                <h3>Desi
-                    <small>Stylist</small>
-                </h3>
-                <p>Specialty in blonding and color</p>
-            </div>
-	</div>
-</div>
-
-<div class="container-fluid salonimg"></div>
-
-<div class="container services" id="services">
-<h3 class="title">Services</h3><hr>
-<div class="row">
-        	<div class="col-sm-6">
-          	<h2 class="text-center header">LADIES</h2>
-          	<table class ="table table-responsive">
-				<tbody>
-					<tr>
-						<th>Haircut</th>
-						<th>50</th>
-					</tr>
-					<tr>
-						<th>Color Touchup</th>
-						<th>65</th>
-					</tr>
-					<tr>
-						<th>One Processing Color</th>
-						<th>90+</th>
-					</tr>
-					<tr>
-						<th>Highlights/Lowlights</th>
-						<th>100+</th>
-					</tr>
-					<tr>
-						<th>Shampoo & Blowdry</th>
-						<th>35</th>
-					</tr>
-					<tr>
-						<th>Event/Updo Style</th>
-						<th>50+</th>
-					</tr>
-					<tr>
-						<th>Makeup</th>
-						<th>40+</th>
-					</tr>
-					<tr>
-						<th>Oil Treatment</th>
-						<th>35+</th>
-					</tr>
-					<tr>
-						<th>Deep Conditioning Treatment</th>
-						<th>45-65</th>
-					</tr>
-					<tr>
-						<th>Keratin Treatment</th>
-						<th>250+</th>
-					</tr>
-					<tr>
-						<th>Permanent Straighting Treatment</th>
-						<th>300+</th>
-					</tr>
-					<tr>
-						<th>Perm</th>
-						<th>100</th>
-					<tr>
-						<th>Extensions</th>
-						<th>Consult</th>
-					</tr>
-				</tbody>
-           </table>
-                </div>
-            	<div class="col-sm-6">
-          <h2 class="text-center header">WAXING</h2>
-		   <table class ="table table-responsive">
-			<tbody>
-				<tr>
-					<th>Full Face</th>
-					<th>35</th>
-				</tr>
-				<tr>
-					<th>Eyebrow</th>
-					<th>15</th>
-				</tr>
-				<tr>
-					<th>Lip</th>
-					<th>8</th>
-				</tr>
-				<tr>
-					<th>Chin</th>
-					<th>10</th>
-				</tr>
-				<tr>
-					<th>Full Arm</th>
-					<th>35+</th>
-				</tr>
-				<tr>
-					<th>Full Leg</th>
-					<th>50+</th>
-				</tr>
-				<tr>
-					<th>Under Arm</th>
-					<th>15</th>
-				</tr>
-			</tbody>
-           </table>
-          </div>
-        </div>
-        <div class="row">
-			<div class="col-sm-6">
-					<h2 class="text-center header">CHILDREN</h2>
-					<table class ="table table-responsive">
-					<tbody>
-						<tr>
-							<th>Girl's Haircut</th>
-							<th>20+</th>
-						</tr>
-						<tr>
-							<th>Boy's Haircut</th>
-							<th>15+</th>
-						</tr>
-						<tr>
-					</tbody>
-					</table>
-			</div>
-				<div class="col-sm-6">
-					<h2 class="text-center header">GENTLEMEN</h2>
-				   <table class ="table table-responsive">
-					<tbody>
-						<tr>
-							<th>Haircut</th>
-							<th>30</th>
-						</tr>
-						<tr>
-							<th>Color</th>
-							<th>50</th>
-						</tr>
-						<tr>
-							<th>Oil/Scalp Treatment</th>
-							<th>25</th>
-						</tr>
-					</tbody>
-				   </table>
-				</div>
-			  </div>
-		  <div class="row">
-			  <div class="col-sm-12">
-					<h2 class="text-center header">SPA SERVICES</h2>
-				   <table class ="table table-responsive">
-						<tbody>
-							<tr>
-								<th>Classic Aqua Recharge Facial</th>
-								<th>50</th>
-							</tr>
-							<tr>
-								<th>Seaweed Treatment Facial</th>
-								<th>65</th>
-							</tr>
-							<tr>
-								<th>Four-Layer Facial</th>
-								<th>100</th>
-							</tr>
-							<tr>
-								<th>Hydra Dew Express Lift Mask</th>
-								<th>75</th>
-							</tr>
-							<tr>
-								<th>Hydra Medic Facial</th>
-								<th>80</th>
-							</tr>
-							<tr>
-								<th>Vita Cura 5 Phase Firming Facial</th>
-								<th>120</th>
-							</tr>
-							<tr>
-								<th>Biolight Miracle Facial</th>
-								<th>140</th>
-							</tr>
-						</tbody>
-			 	  </table>       
-		 	</div>
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav"><span class="sr-only">Toggle navigation</span><span class="sr-only">Toggle navigation</span> </button>
+      <a class="navbar-brand page-scroll" href="#page-top">NEW IMAGE SALON AND SPA</a> </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a class="page-scroll" href="#about">ABOUT</a> </li>
+        <li> <a class="page-scroll" href="#services">SERVICES</a> </li>
+        <li> <a class="page-scroll" href="#portfolio">PORTFOLIO</a> </li>
+        <li> <a class="page-scroll" style="padding-right: 25px;" href="#contact">CONTACT</a> </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
   </div>
-</div>
-
-
-<div class="parallaximg"></div>
-
-<div class="container aboutus" id="portfolio">
-<h3 class="title">Portfolio</h3><hr>
-	<div align="center" id="insta-wrap">
-		<div  id="instafeed"></div>
-		<button id="load-more" type="button" class="btn btn-outline-secondary">Load More</button>
+  <!-- /.container-fluid --> 
+</nav>
+<div class="landingimg"> <span class="caption">Welcome</span> </div>
+<div class="container aboutus" id="about">
+  <h3 class="title">Who We Are</h3>
+  <hr>
+  <div class="row">
+    <p>Located in Fremont, New Image Salon & Spa is one of the most stylish and prestigious hair salons in the East Bay. Some services we offer are coloring, hair highlights, keratin treatments, and permanent straightening treatments. We also offer skin care services includes top of the line facial treatments. Call us to schedule an appointment. </p>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 stylists">
+      <div class="text-center"> <img class="img-circle" align="center" src="tracey.jpg" width="200" alt="">
+        <h3>Tracey <small>Stylist</small> </h3>
+      </div>
+    </div>
+    <div class="col-sm-6 stylists">
+      <div class="text-center"> <img class="img-circle" align="center" src="desi.jpg" width="200" alt="">
+        <h3>Desi <small>Stylist</small> </h3>
+      </div>
+    </div>
+  </div>
 	</div>
-</div>
-
-<div class="contactimg"></div>
-
-<div class="container contact" id="contact">
-<h3 class="title">Contact</h3><hr>
-	<div align="center" class="col-sm-6">
-		<h2 align="center"class="text-center header">HOURS</h2>
-			<p>MONDAY-FRIDAY | 10AM-7PM</p>
-			<p>SATURDAY | 10AM-6PM</p>
-			<p>SUNDAY | 10AM-5PM</p>
-			<br>
-		<h2 align="center"class="text-center header">(510) 792-7400</h2>
-		<button type="button" href="mailto:tracey@fremontnewimagesalon.com"class="btn btn-secondary btn-lg">EMAIL US</button>
-		<br><br>
-		<ul class="list-inline icons text-center">
-			<li><a href="https://www.facebook.com/fremontnewimage/"><i class="fa fa-facebook iconblack" aria-hidden="true"></i></a></li>
-			<li><a href="https://www.instagram.com/fremontnewimagesalon/"><i class="fa fa-instagram iconblack" aria-hidden="true"></i></a></li>
-			<li><a href="http://www.yelp.com/biz/new-image-salon-and-spa-fremont-2"><i class="fa fa-yelp iconblack" aria-hidden="true"></i></a></li>
-	</ul>
-	</div>
-	<div class="col-sm-6">
-		<iframe width="100%" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0W_z4Kl-v4q2XFknvM_P61oO5ZK3cXNE
+  <div class="salonimg"></div>
+  <div class="container services" id="services">
+    <h3 class="title">Services</h3>
+    <hr>
+    <div class="row">
+      <div class="col-sm-6">
+        <h2 class="text-center header">LADIES</h2>
+        <table class = "table table-responsive">
+          <tbody>
+            <tr>
+              <th>Haircut</th>
+              <th class="price">50</th>
+            </tr>
+            <tr>
+              <th>Color Touchup</th>
+              <th class="price">65</th>
+            </tr>
+            <tr>
+              <th>One Processing Color</th>
+              <th class="price">90+</th>
+            </tr>
+            <tr>
+              <th>Highlights/Lowlights</th>
+              <th class="price">100+</th>
+            </tr>
+            <tr>
+              <th>Shampoo & Blowdry</th>
+              <th class="price">35</th>
+            </tr>
+            <tr>
+              <th>Event/Updo Style</th>
+              <th class="price">50+</th>
+            </tr>
+            <tr>
+              <th>Makeup</th>
+              <th class="price">40+</th>
+            </tr>
+            <tr>
+              <th>Oil Treatment</th>
+              <th class="price">35+</th>
+            </tr>
+            <tr>
+              <th>Deep Conditioning Treatment</th>
+              <th class="price">45-65</th>
+            </tr>
+            <tr>
+              <th>Keratin Treatment</th>
+              <th class="price">250+</th>
+            </tr>
+            <tr>
+              <th>Permanent Straighting Treatment</th>
+              <th class="price">300+</th>
+            </tr>
+            <tr>
+              <th>Perm</th>
+              <th class="price">100</th>
+            <tr>
+              <th>Extensions</th>
+              <th class="price">Consult</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-6">
+        <h2 class="text-center header">WAXING</h2>
+        <table class ="table table-responsive">
+          <tbody>
+            <tr>
+              <th>Full Face</th>
+              <th class="price">35</th>
+            </tr>
+            <tr>
+              <th>Eyebrow</th>
+              <th class="price">15</th>
+            </tr>
+            <tr>
+              <th>Lip</th>
+              <th class="price">8</th>
+            </tr>
+            <tr>
+              <th>Chin</th>
+              <th class="price">10</th>
+            </tr>
+            <tr>
+              <th>Full Arm</th>
+              <th class="price">35+</th>
+            </tr>
+            <tr>
+              <th>Full Leg</th>
+              <th class="price">50+</th>
+            </tr>
+            <tr>
+              <th>Under Arm</th>
+              <th class="price">15</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <h2 class="text-center header">CHILDREN</h2>
+        <table class ="table table-responsive">
+          <tbody>
+            <tr>
+              <th>Girl's Haircut</th>
+              <th class="price">20+</th>
+            </tr>
+            <tr>
+              <th>Boy's Haircut</th>
+              <th class="price">15+</th>
+            </tr>
+            <tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-6">
+        <h2 class="text-center header">GENTLEMEN</h2>
+        <table class ="table table-responsive">
+          <tbody>
+            <tr>
+              <th>Haircut</th>
+              <th class="price">30</th>
+            </tr>
+            <tr>
+              <th>Color</th>
+              <th class="price">50</th>
+            </tr>
+            <tr>
+              <th>Oil/Scalp Treatment</th>
+              <th class="price">25</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-center header">SPA SERVICES</h2>
+        <table class ="table table-responsive">
+          <tbody>
+            <tr>
+              <th>Classic Aqua Recharge Facial</th>
+              <th class="price">50</th>
+            </tr>
+            <tr>
+              <th>Seaweed Treatment Facial</th>
+              <th class="price">65</th>
+            </tr>
+            <tr>
+              <th>Four-Layer Facial</th>
+              <th class="price">100</th>
+            </tr>
+            <tr>
+              <th>Hydra Dew Express Lift Mask</th>
+              <th class="price">75</th>
+            </tr>
+            <tr>
+              <th>Hydra Medic Facial</th>
+              <th class="price">80</th>
+            </tr>
+            <tr>
+              <th>Vita Cura 5 Phase Firming Facial</th>
+              <th class="price">120</th>
+            </tr>
+            <tr>
+              <th>Biolight Miracle Facial</th>
+              <th class="price">140</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="parallaximg"></div>
+  <div class="container portfolio" id="portfolio">
+    <h3 class="title">Portfolio</h3>
+    <hr>
+    <div align="center" id="insta-wrap">
+      <div  id="instafeed"></div>
+      <button id="load-more" type="button" class="btn btn-outline-secondary">Load More</button>
+    </div>
+  </div>
+  <div class="contactimg"></div>
+  <div class="container contact" id="contact">
+    <h3 class="title">Contact</h3>
+    <hr>
+    <div align="center" class="col-sm-6">
+      <h2 align="center"class="text-center header">HOURS</h2>
+      <p>MONDAY-FRIDAY | 10AM-7PM</p>
+      <p>SATURDAY | 10AM-6PM</p>
+      <p>SUNDAY | 10AM-5PM</p>
+      <br>
+      <h2 align="center"class="text-center header">(510) 792-7400</h2>
+      <button type="button" href="mailto:tracey@fremontnewimagesalon.com"class="btn btn-secondary btn-lg">EMAIL US</button>
+      <br>
+      <br>
+      <ul class="list-inline icons text-center">
+        <li><a href="https://www.facebook.com/fremontnewimage/"><i class="fa fa-facebook iconblack" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/fremontnewimagesalon/"><i class="fa fa-instagram iconblack" aria-hidden="true"></i></a></li>
+        <li><a href="http://www.yelp.com/biz/new-image-salon-and-spa-fremont-2"><i class="fa fa-yelp iconblack" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <iframe width="100%" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC0W_z4Kl-v4q2XFknvM_P61oO5ZK3cXNE
 		&q=New+Image+Salon+Spa,Fremont+CA" allowfullscreen></iframe>
-	</div>	
+    </div>
+  </div>
+  <div class="footer">
+<h3>NEW IMAGE SALON & SPA</h3> <br>
+	<h4>Designed by Rooted</h4>
+	<img src="rootedlogo">
 </div>
-
 </div>
-
+</div>
 <script>
 	<!-- Smooth Scroll -->
 	$('body').scrollspy({target: ".navbar", offset: 50});
@@ -456,7 +439,6 @@ ul li a:hover, .in ul li a:hover {
 
 });
 </script>
-
 <script type="text/javascript">
     var loadButton = document.getElementById('load-more');
 	var isStandardWindow = window.matchMedia("(min-width: 640px)").matches;
